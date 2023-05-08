@@ -1,16 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+  <head> 
     <title>Getting Started with VR</title>
     <meta name="description" content="Getting Started with VR">
     <meta charset="utf-8">
-    <script src="https://aframe.io/releases/0.9.1/aframe.min.js"></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
   </head>
   <body>
     <!-- We'll be adding content mostly here! -->
     <a-scene>
-  <a-sky color="#000"></a-sky>
-  <a-sphere id="sphere1" position="0 1.25 -5" radius="1.25" color="#42f"></a-sphere>
-</a-scene>
+        <!-- <a-sky color="#000"></a-sky>
+        <a-sphere id="sphere1" position="0 1.25 -5" radius="1.25" color="#42f"></a-sphere>
+
+        <a-entity
+            text="value:!!!!!!; color: #FFFF"
+            position="0 1.25 -3"
+            scale="5 5 5">
+        </a-entity>
+        <a-box position="0 2 -5" rotation="0 45 45"
+          scale="2 2 2" color="#FFFF"></a-box>
+
+        <a-entity geometry="primitive: star; radiusInner: 10; radiusOuter: 10; points: 5"
+          material="color: white"
+          position="0 1.25 -5">
+        </a-entity>
+ -->
+    <a-assets>
+        <img id="boxTexture" src="https://miro.medium.com/v2/resize:fit:1400/0*MQP6EEVPgAbukgrh.jpg">
+        <img id="skyTexture" src="https://cdn.aframe.io/360-image-gallery-boilerplate/img/sechelt.jpg">
+      </a-assets>
+      <a-sky src="#skyTexture"></a-sky>
+      <a-box id="box1" src="#boxTexture" position="0 3.5 -5" rotation="0 45 0" scale="2 2 2"></a-box>
+      <a-sphere id="sphere1" position="0 -1.25 -5" rotation="0 270 100" radius="1.25" material="color: white" src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/athletics.bowdoin.edu/images/2022/1/23/B_Mens_Indoor_Track_01_15_22_2579.JPG"></a-sphere>
+      <a-sphere id="sphere1" position="0 1.25 -5" rotation="0 270 -15" radius="1.25" material="color: white" src="https://dxbhsrqyrr690.cloudfront.net/sidearm.nextgen.sites/athletics.bowdoin.edu/images/2022/1/23/B_Mens_Indoor_Track_01_15_22_2579.JPG"></a-sphere>
+      <a-box id="box1" position="2 1.25 -1" rotation="0 0 0" radius="1.25" material="color: white" src="https://pbs.twimg.com/media/CzesuDdXEAARNZi.jpg:large"></a-box>
+
+      <a-sphere id="sphere1" position="0 -1.25 -7" rotation="0 270 100" radius="1.25" material="color: white" ></a-sphere>
+      <a-sphere id="sphere1" position="0 1.25 -7" rotation="0 270 -15" radius="1.25" material="color: white" ></a-sphere>
+      </a-assests> 
+     
+  
+  </a-scene>
   </body>
+
+
 </html>
